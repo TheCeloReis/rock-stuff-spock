@@ -1,4 +1,5 @@
 <script>
+  import "./styles/main.scss";
   const name = "world";
 </script>
 
