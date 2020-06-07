@@ -1,26 +1,23 @@
 <script>
   import "./styles/main.scss";
+  import Leaderboard from "./components/Leaderboard.svelte";
+  import Footer from "./components/Footer.svelte";
+
   const name = "world";
 </script>
 
 <style>
-  .attribution {
-    font-size: 11px;
-    text-align: center;
-  }
-  .attribution a {
-    color: hsl(228, 45%, 44%);
+  #app {
+    position: relative;
+    overflow: hidden;
+    height: 100%;
+    max-width: var(--max-width);
+    width: 100%;
+    margin: auto;
   }
 </style>
 
-<h1>Hello {name}!</h1>
-
-<div class="attribution">
-  Challenge by
-  <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">
-    Frontend Mentor
-  </a>
-  . Coded by
-  <a href="#">Your Name Here</a>
-  .
+<div id="app">
+  <Leaderboard />
+  <Footer />
 </div>
