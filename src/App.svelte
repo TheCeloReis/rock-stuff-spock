@@ -1,6 +1,7 @@
 <script>
   import "./styles/main.scss";
   import Leaderboard from "./components/Leaderboard.svelte";
+  import Game from "./components/Game.svelte";
   import Footer from "./components/Footer.svelte";
 </script>
 
@@ -17,5 +18,6 @@
 
 <div id="app">
   <Leaderboard />
+  <Game />
   <Footer />
 </div>
