@@ -51,10 +51,12 @@ describe("The store game", () => {
   });
 
   describe("The toogleRus", () => {
-    it("Should change the state of showRules to true when false", () => {
+    it("Should toggle between states", () => {
       expect(get(game).showRules).toBeFalsy();
       game.toggleRules();
       expect(get(game).showRules).toBeTruthy();
+      game.toggleRules();
+      expect(get(game).showRules).toBeFalsy();
     });
   });
 });
