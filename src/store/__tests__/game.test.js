@@ -50,7 +50,7 @@ describe("The store game", () => {
     });
   });
 
-  describe("The toogleRus", () => {
+  describe("The toogleRules", () => {
     it("Should toggle between states", () => {
       expect(get(game).showRules).toBeFalsy();
       game.toggleRules();
