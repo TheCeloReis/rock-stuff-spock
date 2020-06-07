@@ -1,5 +1,5 @@
 <script>
-  const score = 12;
+  export let score = 0;
 </script>
 
 <style>

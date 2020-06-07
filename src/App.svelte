@@ -2,8 +2,6 @@
   import "./styles/main.scss";
   import Leaderboard from "./components/Leaderboard.svelte";
   import Footer from "./components/Footer.svelte";
-
-  const name = "world";
 </script>
 
 <style>
