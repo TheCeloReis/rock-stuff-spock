@@ -3,7 +3,7 @@ import { writable } from "svelte/store";
 const NORMAL_MODE = [
   { value: "rock" },
   { value: "paper" },
-  { value: "scissor" },
+  { value: "scissors" },
 ];
 const SPOCK_MODE = [...NORMAL_MODE, { value: "lizard" }, { value: "spock" }];
 
