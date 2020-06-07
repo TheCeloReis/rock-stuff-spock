@@ -10,8 +10,12 @@
     padding: 8px;
 
     display: grid;
-    grid-template-columns: auto 64px;
+    grid-template-columns: auto 80px;
     grid-template-rows: 64px;
+  }
+
+  .logo {
+    padding: 8px;
   }
 
   .score {
@@ -28,12 +32,12 @@
   .score-number {
     color: var(--dark-text);
     font-weight: 700;
-    font-size: 32px;
+    font-size: 2.25rem;
   }
 </style>
 
 <div class="container">
-  <div>
+  <div class="logo">
     <img src="/images/logo-bonus.svg" height="100%" alt="" />
   </div>
   <div class="score">
