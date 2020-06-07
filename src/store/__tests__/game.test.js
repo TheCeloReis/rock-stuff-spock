@@ -49,4 +49,12 @@ describe("The store game", () => {
       expect(get(game)).toBe(initial);
     });
   });
+
+  describe("The toogleRus", () => {
+    it("Should change the state of showRules to true when false", () => {
+      expect(get(game).showRules).toBeFalsy();
+      game.toggleRules();
+      expect(get(game).showRules).toBeTruthy();
+    });
+  });
 });

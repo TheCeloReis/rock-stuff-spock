@@ -18,6 +18,7 @@ const uninitializedGame = {
     score: 0,
   },
   cards: [],
+  showRules: false,
 };
 
 const { subscribe, set, update } = writable(uninitializedGame);
@@ -31,8 +32,12 @@ const init = (mode = "normal") => {
 
 const reset = () => set(uninitializedGame);
 
+const toggleRules = () =>
+  update((state) => ({ ...state, showRules: !state.showRules }));
+
 export default {
   subscribe,
   init,
   reset,
+  toggleRules,
 };
