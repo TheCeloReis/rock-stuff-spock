@@ -19,8 +19,17 @@ body {
   position: relative;
   box-sizing: border-box;
   background-image: var(--backgound-color);
-  background-size: 200vw 200vh;
   background-position: bottom;
-
   color: #fff;
+}
+
+@media (orientation: landscape) {
+  body {
+    background-size: 200vw 200vw;
+  }
+}
+@media (orientation: portrait) {
+  body {
+    background-size: 200vh 200vh;
+  }
 }
