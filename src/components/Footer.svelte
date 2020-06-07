@@ -6,6 +6,7 @@
     transform: translateX(-50%);
     font-size: 11px;
     text-align: center;
+    padding: 8px;
   }
   .attribution a {
     color: hsl(228, 45%, 44%);
