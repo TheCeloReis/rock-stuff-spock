@@ -1,7 +1,7 @@
 <script>
   export let type = "outline";
   export let full = "";
-  export let disabled;
+  export let disabled = undefined;
   export let onClick = () => {};
 </script>
 

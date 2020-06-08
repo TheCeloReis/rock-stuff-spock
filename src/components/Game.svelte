@@ -1,6 +1,7 @@
 <script>
   import Button from "./Button.svelte";
   import GameButton from "./GameButton.svelte";
+  import Leaderboard from "./Leaderboard.svelte";
 
   import game from "../store/game";
 </script>
@@ -21,6 +22,12 @@
     display: grid;
     grid-gap: 16px;
   }
+
+  .button-rules {
+    position: absolute;
+    bottom: 16px;
+    right: 16px;
+  }
 </style>
 
 {#if !$game.mode}
@@ -34,8 +41,13 @@
     </div>
   </div>
 {:else}
+  <Leaderboard score={$game.player.score} />
+
   {#each $game.cards as card}
     <GameButton option={card.value} />
   {/each}
   <Button onClick={() => game.reset()}>Reset</Button>
+  <div class="button-rules">
+    <Button onClick={game.toggleRules}>Rules</Button>
+  </div>
 {/if}
