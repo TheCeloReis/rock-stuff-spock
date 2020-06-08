@@ -19,5 +19,8 @@
 
 <div id="app">
   <Game />
-  <RulesModal show={$game.showRules} toggle={game.toggleRules} />
+  <RulesModal
+    mode={$game.mode}
+    show={$game.showRules}
+    toggle={game.toggleRules} />
 </div>

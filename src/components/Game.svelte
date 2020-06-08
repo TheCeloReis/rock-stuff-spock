@@ -47,6 +47,7 @@
     <GameButton option={card.value} />
   {/each}
   <Button onClick={() => game.reset()}>Reset</Button>
+
   <div class="button-rules">
     <Button onClick={game.toggleRules}>Rules</Button>
   </div>
