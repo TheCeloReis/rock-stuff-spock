@@ -1,14 +1,41 @@
 <script>
+  import Button from "./Button.svelte";
   import GameButton from "./GameButton.svelte";
+
   import game from "../store/game";
 </script>
 
+<style>
+  .choose-container {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .choose-header {
+    white-space: nowrap;
+    text-transform: uppercase;
+    font-size: 2rem;
+  }
+  .choose-buttons {
+    display: grid;
+    grid-gap: 16px;
+  }
+</style>
+
 {#if !$game.mode}
-  <button on:click={() => game.init('normal')}>Normal</button>
-  <button on:click={() => game.init('spock')}>Spock</button>
+  <div class="choose-container">
+    <h2 class="choose-header">Escolha um modo</h2>
+    <div class="choose-buttons">
+      <Button full="full" onClick={() => game.init('normal')}>Normal</Button>
+      <Button disabled full="full" onClick={() => game.init('spock')}>
+        Spock
+      </Button>
+    </div>
+  </div>
 {:else}
   {#each $game.cards as card}
     <GameButton option={card.value} />
   {/each}
-  <button on:click={() => game.reset()}>Reset</button>
+  <Button onClick={() => game.reset()}>Reset</Button>
 {/if}

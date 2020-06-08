@@ -2,7 +2,10 @@
   import "./styles/main.scss";
   import Leaderboard from "./components/Leaderboard.svelte";
   import Game from "./components/Game.svelte";
-  import Footer from "./components/Footer.svelte";
+  import RulesModal from "./components/RulesModal.svelte";
+  import Button from "./components/Button.svelte";
+
+  import game from "./store/game";
 </script>
 
 <style>
@@ -14,10 +17,21 @@
     width: 100%;
     margin: auto;
   }
+
+  .button-rules {
+    position: absolute;
+    bottom: 16px;
+    right: 16px;
+  }
 </style>
 
 <div id="app">
   <Leaderboard />
   <Game />
-  <Footer />
+
+  <div class="button-rules">
+    <Button onClick={game.toggleRules}>Rules</Button>
+  </div>
+
+  <RulesModal show={$game.showRules} toggle={game.toggleRules} />
 </div>
