@@ -1,11 +1,3 @@
-<script>
-  import Rules from "./Rules.svelte";
-
-  export let show = false;
-  export let mode;
-  export let toggle = () => {};
-</script>
-
 <style>
   .container {
     z-index: 100;
@@ -52,12 +44,20 @@
   }
 </style>
 
-<div class={`container${show ? ' on' : ''}`}>
+<script>
+  import Rules from "./Rules.svelte";
+
+  export let show = false;
+  export let mode;
+  export let toggle = () => {};
+</script>
+
+<div class="{`container${show ? ' on' : ''}`}">
   <div class="modal-box">
-    <Rules {mode} />
+    <Rules mode="mode" />
   </div>
 
-  <button class="button" on:click={toggle} title="Fechar">
-    <i class="close-icon" />
+  <button class="button" on:click="{toggle}" title="Fechar">
+    <i class="close-icon"></i>
   </button>
 </div>

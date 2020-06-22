@@ -1,7 +1,3 @@
-<script>
-  export let option = "";
-</script>
-
 <style>
   .button {
     border-radius: 50%;
@@ -46,8 +42,12 @@
   }
 </style>
 
+<script>
+  export let option = "";
+</script>
+
 <button class="button {option}">
   <div class="button-icon">
-    <img class="button-image" src={`/images/icon-${option}.svg`} alt="" />
+    <img class="button-image" src="{`/images/icon-${option}.svg`}" alt="" />
   </div>
 </button>

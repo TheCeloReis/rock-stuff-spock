@@ -1,29 +1,42 @@
 <script>
-  export let mode;
+  export let mode = "normal";
 </script>
 
 {#if mode === 'normal'}
   <svg xmlns="http://www.w3.org/2000/svg" width="304" height="270">
     <defs>
       <linearGradient id="a" x1="50%" x2="50%" y1="0%" y2="100%">
-        <stop offset="0%" stop-color="#FFF" stop-opacity=".097" />
-        <stop offset="100%" stop-color="#FFF" stop-opacity="0" />
+        <stop offset="0%" stop-color="#FFF" stop-opacity=".097"></stop>
+        <stop offset="100%" stop-color="#FFF" stop-opacity="0"></stop>
       </linearGradient>
       <linearGradient id="b" x1="50%" x2="50%" y1="0%" y2="100%">
-        <stop offset="0%" stop-color="#FFF" stop-opacity=".097" />
-        <stop offset="100%" stop-color="#FFF" stop-opacity="0" />
+        <stop offset="0%" stop-color="#FFF" stop-opacity=".097"></stop>
+        <stop offset="100%" stop-color="#FFF" stop-opacity="0"></stop>
       </linearGradient>
     </defs>
     <g fill="none" fill-rule="evenodd">
-      <ellipse cx="53.189" cy="54.815" fill="#B1B4C5" rx="53.189" ry="54.815" />
-      <ellipse cx="53.189" cy="52.385" fill="url(#a)" rx="53.189" ry="52.385" />
+      <ellipse
+        cx="53.189"
+        cy="54.815"
+        fill="#B1B4C5"
+        rx="53.189"
+        ry="54.815"
+      ></ellipse>
+      <ellipse
+        cx="53.189"
+        cy="52.385"
+        fill="url(#a)"
+        rx="53.189"
+        ry="52.385"
+      ></ellipse>
       <g transform="translate(12.357 12.421)">
         <ellipse
           cx="40.832"
           cy="41.044"
           fill="#E1E4ED"
           rx="40.832"
-          ry="41.044" />
+          ry="41.044"
+        ></ellipse>
         <path
           fill="#8A90AC"
           fill-rule="nonzero"
@@ -46,7 +59,8 @@
           01-.117.43l-.114.12.725.711 13.832-.98.59-2.73c1.823-7.705
           1.442-14.275
           1.436-14.319.007-.242.518-2.58.93-4.468l.011-.048c.82-3.763
-          1.838-8.444 2.034-10.225.085-.761-.398-1.46-1.23-1.779z" />
+          1.838-8.444 2.034-10.225.085-.761-.398-1.46-1.23-1.779z"
+        ></path>
       </g>
       <g transform="translate(196)">
         <ellipse
@@ -54,20 +68,23 @@
           cy="54.815"
           fill="#B1B4C5"
           rx="53.686"
-          ry="54.815" />
+          ry="54.815"
+        ></ellipse>
         <ellipse
           cx="53.686"
           cy="52.385"
           fill="url(#b)"
           rx="53.686"
-          ry="52.385" />
+          ry="52.385"
+        ></ellipse>
         <g transform="translate(12.473 12.421)">
           <ellipse
             cx="41.214"
             cy="41.044"
             fill="#E1E4ED"
             rx="41.214"
-            ry="41.044" />
+            ry="41.044"
+          ></ellipse>
           <path
             fill="#8A90AC"
             fill-rule="nonzero"
@@ -81,7 +98,8 @@
             8.654-7.562 7.39-6.65 12.958-11.848
             2.08-1.725-.536-4.776-2.586-3.03L40.978 40.506a1.051 1.051 0
             01-1.378-.015c-.445-.383-.455-.934-.164-1.37l9.395-14.545c1.373-1.852-1.33-3.91-2.776-2.042L32.164
-            41.881a1.05 1.05 0 01-1.47.255 1.02 1.02 0 01-.24-1.444z" />
+            41.881a1.05 1.05 0 01-1.47.255 1.02 1.02 0 01-.24-1.444z"
+          ></path>
         </g>
       </g>
       <g transform="translate(98 160)">
@@ -90,20 +108,23 @@
           cy="54.815"
           fill="#B1B4C5"
           rx="53.686"
-          ry="54.815" />
+          ry="54.815"
+        ></ellipse>
         <ellipse
           cx="53.686"
           cy="52.385"
           fill="url(#b)"
           rx="53.686"
-          ry="52.385" />
+          ry="52.385"
+        ></ellipse>
         <g transform="translate(12.473 12.421)">
           <ellipse
             cx="41.214"
             cy="41.044"
             fill="#E1E4ED"
             rx="41.214"
-            ry="41.044" />
+            ry="41.044"
+          ></ellipse>
           <path
             fill="#8A90AC"
             fill-rule="nonzero"
@@ -112,7 +133,8 @@
             5.234-7.087 5.234-.173 1.917 1.04 7.847 1.04
             7.847-1.094-3.418-3.467-.581-3.467-.581-2.917 4.502-.721 6.967-.721
             6.967 3.947 4.626 12.357 10.18 12.357 10.18 3.046 1.745 1.757 3.3
-            1.757 3.3l18.42-3.044.424-3.494c2.8-8.472-.547-19.284-.547-19.284z" />
+            1.757 3.3l18.42-3.044.424-3.494c2.8-8.472-.547-19.284-.547-19.284z"
+          ></path>
         </g>
       </g>
       <text
@@ -120,7 +142,8 @@
         font-family="BarlowSemiCondensed-Bold, Barlow Semi Condensed"
         font-size="13"
         font-style="condensed"
-        font-weight="bold">
+        font-weight="bold"
+      >
         <tspan x="134" y="31">BEATS</tspan>
       </text>
       <text
@@ -128,7 +151,8 @@
         font-family="BarlowSemiCondensed-Bold, Barlow Semi Condensed"
         font-size="13"
         font-style="condensed"
-        font-weight="bold">
+        font-weight="bold"
+      >
         <tspan x="40" y="147">BEATS</tspan>
       </text>
       <text
@@ -136,41 +160,48 @@
         font-family="BarlowSemiCondensed-Bold, Barlow Semi Condensed"
         font-size="13"
         font-style="condensed"
-        font-weight="bold">
+        font-weight="bold"
+      >
         <tspan x="235" y="147">BEATS</tspan>
       </text>
       <g fill="#B1B4C5" transform="matrix(-1 0 0 1 177 39)">
-        <rect width="50" height="4" y="10" rx="2" />
+        <rect width="50" height="4" y="10" rx="2"></rect>
         <path
           d="M41.963 2.015l8.59 8.728c.716.727.71 1.896-.013 2.616a1.833 1.833 0
           01-2.6-.013l-8.59-8.728a1.855 1.855 0 01.013-2.616 1.833 1.833 0
-          012.6.013z" />
+          012.6.013z"
+        ></path>
         <path
           d="M39.35 19.382l8.59-8.728a1.833 1.833 0 012.6-.013c.723.72.729
           1.889.013 2.616l-8.59 8.728a1.833 1.833 0 01-2.6.013 1.855 1.855 0
-          01-.013-2.616z" />
+          01-.013-2.616z"
+        ></path>
       </g>
       <g fill="#B1B4C5" transform="scale(1 -1) rotate(-55 -82.574 -131.195)">
-        <rect width="50" height="4" y="10" rx="2" />
+        <rect width="50" height="4" y="10" rx="2"></rect>
         <path
           d="M41.963 2.015l8.59 8.728c.716.727.71 1.896-.013 2.616a1.833 1.833 0
           01-2.6-.013l-8.59-8.728a1.855 1.855 0 01.013-2.616 1.833 1.833 0
-          012.6.013z" />
+          012.6.013z"
+        ></path>
         <path
           d="M39.35 19.382l8.59-8.728a1.833 1.833 0 012.6-.013c.723.72.729
           1.889.013 2.616l-8.59 8.728a1.833 1.833 0 01-2.6.013 1.855 1.855 0
-          01-.013-2.616z" />
+          01-.013-2.616z"
+        ></path>
       </g>
       <g fill="#B1B4C5" transform="rotate(-55 240.022 -103.651)">
-        <rect width="50" height="4" y="10" rx="2" />
+        <rect width="50" height="4" y="10" rx="2"></rect>
         <path
           d="M41.963 2.015l8.59 8.728c.716.727.71 1.896-.013 2.616a1.833 1.833 0
           01-2.6-.013l-8.59-8.728a1.855 1.855 0 01.013-2.616 1.833 1.833 0
-          012.6.013z" />
+          012.6.013z"
+        ></path>
         <path
           d="M39.35 19.382l8.59-8.728a1.833 1.833 0 012.6-.013c.723.72.729
           1.889.013 2.616l-8.59 8.728a1.833 1.833 0 01-2.6.013 1.855 1.855 0
-          01-.013-2.616z" />
+          01-.013-2.616z"
+        ></path>
       </g>
     </g>
   </svg>
@@ -178,21 +209,34 @@
   <svg xmlns="http://www.w3.org/2000/svg" width="336" height="330">
     <defs>
       <linearGradient id="a" x1="50%" x2="50%" y1="0%" y2="100%">
-        <stop offset="0%" stop-color="#FFF" stop-opacity=".097" />
-        <stop offset="100%" stop-color="#FFF" stop-opacity="0" />
+        <stop offset="0%" stop-color="#FFF" stop-opacity=".097"></stop>
+        <stop offset="100%" stop-color="#FFF" stop-opacity="0"></stop>
       </linearGradient>
     </defs>
     <g fill="none" fill-rule="evenodd">
       <g transform="translate(233 92)">
-        <ellipse cx="51.5" cy="50.172" fill="#B1B4C5" rx="51.5" ry="50.172" />
-        <ellipse cx="51.5" cy="50.172" fill="url(#a)" rx="51.5" ry="50.172" />
+        <ellipse
+          cx="51.5"
+          cy="50.172"
+          fill="#B1B4C5"
+          rx="51.5"
+          ry="50.172"
+        ></ellipse>
+        <ellipse
+          cx="51.5"
+          cy="50.172"
+          fill="url(#a)"
+          rx="51.5"
+          ry="50.172"
+        ></ellipse>
         <g transform="translate(11.965 11.897)">
           <ellipse
             cx="39.535"
             cy="39.31"
             fill="#E1E4ED"
             rx="39.535"
-            ry="39.31" />
+            ry="39.31"
+          ></ellipse>
           <path
             fill="#8A90AC"
             fill-rule="nonzero"
@@ -215,19 +259,33 @@
             01-.114.41l-.11.116.702.681 13.392-.94.571-2.613c1.766-7.38
             1.397-13.672
             1.391-13.714.007-.232.502-2.47.9-4.28l.011-.046c.794-3.603
-            1.78-8.087 1.97-9.793.082-.73-.386-1.399-1.19-1.703z" />
+            1.78-8.087 1.97-9.793.082-.73-.386-1.399-1.19-1.703z"
+          ></path>
         </g>
       </g>
       <g transform="translate(0 92)">
-        <ellipse cx="51.5" cy="52.5" fill="#B1B4C5" rx="51.5" ry="52.5" />
-        <ellipse cx="51.5" cy="50.172" fill="url(#a)" rx="51.5" ry="50.172" />
+        <ellipse
+          cx="51.5"
+          cy="52.5"
+          fill="#B1B4C5"
+          rx="51.5"
+          ry="52.5"
+        ></ellipse>
+        <ellipse
+          cx="51.5"
+          cy="50.172"
+          fill="url(#a)"
+          rx="51.5"
+          ry="50.172"
+        ></ellipse>
         <g transform="translate(11.965 11.897)">
           <ellipse
             cx="39.535"
             cy="39.31"
             fill="#E1E4ED"
             rx="39.535"
-            ry="39.31" />
+            ry="39.31"
+          ></ellipse>
           <path
             fill="#8A90AC"
             fill-rule="nonzero"
@@ -243,19 +301,33 @@
             00.833 1.098h15.607a.866.866 0
             00.823-1.135c-.009-.022-.734-2.248-.048-5.276.87-.703 3.917-3.166
             5.011-4.16 1.809-1.642 6.764-6.716 6.974-6.932a.858.858 0
-            00-.009-1.21z" />
+            00-.009-1.21z"
+          ></path>
         </g>
       </g>
       <g transform="translate(117)">
-        <ellipse cx="51.5" cy="52.5" fill="#B1B4C5" rx="51.5" ry="52.5" />
-        <ellipse cx="51.5" cy="50.172" fill="url(#a)" rx="51.5" ry="50.172" />
+        <ellipse
+          cx="51.5"
+          cy="52.5"
+          fill="#B1B4C5"
+          rx="51.5"
+          ry="52.5"
+        ></ellipse>
+        <ellipse
+          cx="51.5"
+          cy="50.172"
+          fill="url(#a)"
+          rx="51.5"
+          ry="50.172"
+        ></ellipse>
         <g transform="translate(11.965 11.897)">
           <ellipse
             cx="39.535"
             cy="39.31"
             fill="#E1E4ED"
             rx="39.535"
-            ry="39.31" />
+            ry="39.31"
+          ></ellipse>
           <path
             fill="#8A90AC"
             fill-rule="nonzero"
@@ -269,19 +341,33 @@
             8.301-7.242 7.09-6.37 12.43-11.347
             1.996-1.652-.515-4.575-2.481-2.901L39.31 38.794a1.01 1.01 0
             01-1.322-.014c-.427-.367-.437-.895-.158-1.312l9.012-13.931c1.318-1.774-1.275-3.744-2.663-1.956l-13.325
-            18.53a1.009 1.009 0 01-1.41.246.976.976 0 01-.23-1.383z" />
+            18.53a1.009 1.009 0 01-1.41.246.976.976 0 01-.23-1.383z"
+          ></path>
         </g>
       </g>
       <g transform="translate(187 225)">
-        <ellipse cx="51.5" cy="52.5" fill="#B1B4C5" rx="51.5" ry="52.5" />
-        <ellipse cx="51.5" cy="50.172" fill="url(#a)" rx="51.5" ry="50.172" />
+        <ellipse
+          cx="51.5"
+          cy="52.5"
+          fill="#B1B4C5"
+          rx="51.5"
+          ry="52.5"
+        ></ellipse>
+        <ellipse
+          cx="51.5"
+          cy="50.172"
+          fill="url(#a)"
+          rx="51.5"
+          ry="50.172"
+        ></ellipse>
         <g transform="translate(11.965 11.897)">
           <ellipse
             cx="39.535"
             cy="39.31"
             fill="#E1E4ED"
             rx="39.535"
-            ry="39.31" />
+            ry="39.31"
+          ></ellipse>
           <path
             fill="#8A90AC"
             fill-rule="nonzero"
@@ -290,19 +376,33 @@
             5.013-6.798 5.013-.167 1.836.996 7.515.996
             7.515-1.049-3.273-3.325-.556-3.325-.556-2.797 4.312-.691 6.673-.691
             6.673 3.785 4.431 11.854 9.75 11.854 9.75 2.92 1.671 1.685 3.161
-            1.685 3.161l17.67-2.916.407-3.346c2.686-8.114-.525-18.47-.525-18.47z" />
+            1.685 3.161l17.67-2.916.407-3.346c2.686-8.114-.525-18.47-.525-18.47z"
+          ></path>
         </g>
       </g>
       <g transform="translate(46 225)">
-        <ellipse cx="51.5" cy="52.5" fill="#B1B4C5" rx="51.5" ry="52.5" />
-        <ellipse cx="51.5" cy="50.172" fill="url(#a)" rx="51.5" ry="50.172" />
+        <ellipse
+          cx="51.5"
+          cy="52.5"
+          fill="#B1B4C5"
+          rx="51.5"
+          ry="52.5"
+        ></ellipse>
+        <ellipse
+          cx="51.5"
+          cy="50.172"
+          fill="url(#a)"
+          rx="51.5"
+          ry="50.172"
+        ></ellipse>
         <g transform="translate(11.965 11.897)">
           <ellipse
             cx="39.535"
             cy="39.31"
             fill="#E1E4ED"
             rx="39.535"
-            ry="39.31" />
+            ry="39.31"
+          ></ellipse>
           <path
             fill="#8A90AC"
             fill-rule="nonzero"
@@ -337,161 +437,199 @@
             1.41v.441l.188-.194a1.34 1.34 0 011.935 0c.815.84.227 1.762 0
             1.996l-2.123 2.189v.065c0 1.332.45 2.606 1.259 3.618 1.002-1.198
             1.79-2.703 2.36-4.514-.417-1.153-1.065-3.882.589-6.978.866-1.622
-            2.531-3.326 4.345-4.448z" />
+            2.531-3.326 4.345-4.448z"
+          ></path>
         </g>
       </g>
       <g fill="#B1B4C5" transform="rotate(-40 152.162 -62.778)">
-        <rect width="32.692" height="2.667" y="6.667" rx="1.333" />
+        <rect width="32.692" height="2.667" y="6.667" rx="1.333"></rect>
         <path
           d="M27.437 1.343l5.617 5.819c.47.487.466 1.26-.009 1.744a1.187 1.187 0
           01-1.7-.009l-5.617-5.819a1.249 1.249 0 01.009-1.744 1.187 1.187 0
-          011.7.009z" />
+          011.7.009z"
+        ></path>
         <path
           d="M25.728 12.922l5.617-5.82a1.187 1.187 0 011.7-.008c.475.483.48
           1.257.009 1.744l-5.617 5.82a1.187 1.187 0 01-1.7.008 1.249 1.249 0
-          01-.009-1.744z" />
+          01-.009-1.744z"
+        ></path>
       </g>
       <g fill="#B1B4C5" transform="scale(1 -1) rotate(-40 11.858 -344.091)">
-        <rect width="32.692" height="2.667" y="6.667" rx="1.333" />
+        <rect width="32.692" height="2.667" y="6.667" rx="1.333"></rect>
         <path
           d="M27.437 1.343l5.617 5.819c.47.487.466 1.26-.009 1.744a1.187 1.187 0
           01-1.7-.009l-5.617-5.819a1.249 1.249 0 01.009-1.744 1.187 1.187 0
-          011.7.009z" />
+          011.7.009z"
+        ></path>
         <path
           d="M25.728 12.922l5.617-5.82a1.187 1.187 0 011.7-.008c.475.483.48
           1.257.009 1.744l-5.617 5.82a1.187 1.187 0 01-1.7.008 1.249 1.249 0
-          01-.009-1.744z" />
+          01-.009-1.744z"
+        ></path>
       </g>
       <g fill="#B1B4C5" transform="rotate(127 100.649 180.558)">
-        <rect width="32.692" height="2.667" y="6.667" rx="1.333" />
+        <rect width="32.692" height="2.667" y="6.667" rx="1.333"></rect>
         <path
           d="M27.437 1.343l5.617 5.819c.47.487.466 1.26-.009 1.744a1.187 1.187 0
           01-1.7-.009l-5.617-5.819a1.249 1.249 0 01.009-1.744 1.187 1.187 0
-          011.7.009z" />
+          011.7.009z"
+        ></path>
         <path
           d="M25.728 12.922l5.617-5.82a1.187 1.187 0 011.7-.008c.475.483.48
           1.257.009 1.744l-5.617 5.82a1.187 1.187 0 01-1.7.008 1.249 1.249 0
-          01-.009-1.744z" />
+          01-.009-1.744z"
+        ></path>
       </g>
       <g fill="#B1B4C5" transform="matrix(-1 0 0 1 186 297)">
-        <rect width="32.692" height="2.667" y="6.667" rx="1.333" />
+        <rect width="32.692" height="2.667" y="6.667" rx="1.333"></rect>
         <path
           d="M27.437 1.343l5.617 5.819c.47.487.466 1.26-.009 1.744a1.187 1.187 0
           01-1.7-.009l-5.617-5.819a1.249 1.249 0 01.009-1.744 1.187 1.187 0
-          011.7.009z" />
+          011.7.009z"
+        ></path>
         <path
           d="M25.728 12.922l5.617-5.82a1.187 1.187 0 011.7-.008c.475.483.48
           1.257.009 1.744l-5.617 5.82a1.187 1.187 0 01-1.7.008 1.249 1.249 0
-          01-.009-1.744z" />
+          01-.009-1.744z"
+        ></path>
       </g>
       <g fill="#B1B4C5" transform="scale(-1 1) rotate(-53 195.597 178.185)">
-        <rect width="32.692" height="2.667" y="6.667" rx="1.333" />
+        <rect width="32.692" height="2.667" y="6.667" rx="1.333"></rect>
         <path
           d="M27.437 1.343l5.617 5.819c.47.487.466 1.26-.009 1.744a1.187 1.187 0
           01-1.7-.009l-5.617-5.819a1.249 1.249 0 01.009-1.744 1.187 1.187 0
-          011.7.009z" />
+          011.7.009z"
+        ></path>
         <path
           d="M25.728 12.922l5.617-5.82a1.187 1.187 0 011.7-.008c.475.483.48
           1.257.009 1.744l-5.617 5.82a1.187 1.187 0 01-1.7.008 1.249 1.249 0
-          01-.009-1.744z" />
+          01-.009-1.744z"
+        ></path>
       </g>
       <g fill="#B1B4C5">
         <g transform="matrix(-1 0 0 1 212 131)">
-          <rect width="85" height="2.667" x=".692" y="6.667" rx="1.333" />
+          <rect width="85" height="2.667" x=".692" y="6.667" rx="1.333"></rect>
           <path
             d="M80.437 1.343l5.617 5.819c.47.487.466 1.26-.009 1.744a1.187 1.187
             0 01-1.7-.009l-5.617-5.819a1.249 1.249 0 01.009-1.744 1.187 1.187 0
-            011.7.009z" />
+            011.7.009z"
+          ></path>
           <path
             d="M78.728 12.922l5.617-5.82a1.187 1.187 0 011.7-.008c.475.483.48
             1.257.009 1.744l-5.617 5.82a1.187 1.187 0 01-1.7.008 1.249 1.249 0
-            01-.009-1.744z" />
+            01-.009-1.744z"
+          ></path>
         </g>
         <text
           font-family="BarlowSemiCondensed-Bold, Barlow Semi Condensed"
           font-size="6"
           font-style="condensed"
           font-weight="bold"
-          transform="translate(124 131)">
+          transform="translate(124 131)"
+        >
           <tspan x="36" y="14">BEATS</tspan>
         </text>
         <g transform="rotate(40 -169.505 247.617)">
-          <rect width="85" height="2.667" x=".692" y="6.667" rx="1.333" />
+          <rect width="85" height="2.667" x=".692" y="6.667" rx="1.333"></rect>
           <path
             d="M80.437 1.343l5.617 5.819c.47.487.466 1.26-.009 1.744a1.187 1.187
             0 01-1.7-.009l-5.617-5.819a1.249 1.249 0 01.009-1.744 1.187 1.187 0
-            011.7.009z" />
+            011.7.009z"
+          ></path>
           <path
             d="M78.728 12.922l5.617-5.82a1.187 1.187 0 011.7-.008c.475.483.48
             1.257.009 1.744l-5.617 5.82a1.187 1.187 0 01-1.7.008 1.249 1.249 0
-            01-.009-1.744z" />
+            01-.009-1.744z"
+          ></path>
         </g>
         <text
           font-family="BarlowSemiCondensed-Bold, Barlow Semi Condensed"
           font-size="6"
           font-style="condensed"
           font-weight="bold"
-          transform="rotate(40 -161.263 250.617)">
+          transform="rotate(40 -161.263 250.617)"
+        >
           <tspan x="36" y="6">BEATS</tspan>
         </text>
         <g transform="rotate(-40 381.505 -93.07)">
-          <rect width="85" height="2.667" x=".692" y="6.667" rx="1.333" />
+          <rect width="85" height="2.667" x=".692" y="6.667" rx="1.333"></rect>
           <path
             d="M80.437 1.343l5.617 5.819c.47.487.466 1.26-.009 1.744a1.187 1.187
             0 01-1.7-.009l-5.617-5.819a1.249 1.249 0 01.009-1.744 1.187 1.187 0
-            011.7.009z" />
+            011.7.009z"
+          ></path>
           <path
             d="M78.728 12.922l5.617-5.82a1.187 1.187 0 011.7-.008c.475.483.48
             1.257.009 1.744l-5.617 5.82a1.187 1.187 0 01-1.7.008 1.249 1.249 0
-            01-.009-1.744z" />
+            01-.009-1.744z"
+          ></path>
         </g>
         <text
           font-family="BarlowSemiCondensed-Bold, Barlow Semi Condensed"
           font-size="6"
           font-style="condensed"
           font-weight="bold"
-          transform="rotate(-40 373.263 -90.07)">
+          transform="rotate(-40 373.263 -90.07)"
+        >
           <tspan x="36" y="6">BEATS</tspan>
         </text>
         <g>
           <g transform="rotate(-110 176.867 31.934)">
-            <rect width="85" height="2.667" x=".692" y="6.667" rx="1.333" />
+            <rect
+              width="85"
+              height="2.667"
+              x=".692"
+              y="6.667"
+              rx="1.333"
+            ></rect>
             <path
               d="M80.437 1.343l5.617 5.819c.47.487.466 1.26-.009 1.744a1.187
               1.187 0 01-1.7-.009l-5.617-5.819a1.249 1.249 0 01.009-1.744 1.187
-              1.187 0 011.7.009z" />
+              1.187 0 011.7.009z"
+            ></path>
             <path
               d="M78.728 12.922l5.617-5.82a1.187 1.187 0 011.7-.008c.475.483.48
               1.257.009 1.744l-5.617 5.82a1.187 1.187 0 01-1.7.008 1.249 1.249 0
-              01-.009-1.744z" />
+              01-.009-1.744z"
+            ></path>
           </g>
           <text
             font-family="BarlowSemiCondensed-Bold, Barlow Semi Condensed"
             font-size="6"
             font-style="condensed"
             font-weight="bold"
-            transform="rotate(-110 174.766 34.934)">
+            transform="rotate(-110 174.766 34.934)"
+          >
             <tspan x="36" y="6">BEATS</tspan>
           </text>
         </g>
         <g>
           <g transform="rotate(110 35.133 118.76)">
-            <rect width="85" height="2.667" x=".692" y="6.667" rx="1.333" />
+            <rect
+              width="85"
+              height="2.667"
+              x=".692"
+              y="6.667"
+              rx="1.333"
+            ></rect>
             <path
               d="M80.437 1.343l5.617 5.819c.47.487.466 1.26-.009 1.744a1.187
               1.187 0 01-1.7-.009l-5.617-5.819a1.249 1.249 0 01.009-1.744 1.187
-              1.187 0 011.7.009z" />
+              1.187 0 011.7.009z"
+            ></path>
             <path
               d="M78.728 12.922l5.617-5.82a1.187 1.187 0 011.7-.008c.475.483.48
               1.257.009 1.744l-5.617 5.82a1.187 1.187 0 01-1.7.008 1.249 1.249 0
-              01-.009-1.744z" />
+              01-.009-1.744z"
+            ></path>
           </g>
           <text
             font-family="BarlowSemiCondensed-Bold, Barlow Semi Condensed"
             font-size="6"
             font-style="condensed"
             font-weight="bold"
-            transform="rotate(110 37.234 121.76)">
+            transform="rotate(110 37.234 121.76)"
+          >
             <tspan x="36" y="6">BEATS</tspan>
           </text>
         </g>
@@ -501,7 +639,8 @@
         font-family="BarlowSemiCondensed-Bold, Barlow Semi Condensed"
         font-size="11"
         font-style="condensed"
-        font-weight="bold">
+        font-weight="bold"
+      >
         <tspan x="252" y="64">BEATS</tspan>
       </text>
       <text
@@ -509,7 +648,8 @@
         font-family="BarlowSemiCondensed-Bold, Barlow Semi Condensed"
         font-size="11"
         font-style="condensed"
-        font-weight="bold">
+        font-weight="bold"
+      >
         <tspan x="55" y="64">BEATS</tspan>
       </text>
       <text
@@ -517,7 +657,8 @@
         font-family="BarlowSemiCondensed-Bold, Barlow Semi Condensed"
         font-size="11"
         font-style="condensed"
-        font-weight="bold">
+        font-weight="bold"
+      >
         <tspan x="305" y="225">BEATS</tspan>
       </text>
       <text
@@ -525,7 +666,8 @@
         font-family="BarlowSemiCondensed-Bold, Barlow Semi Condensed"
         font-size="11"
         font-style="condensed"
-        font-weight="bold">
+        font-weight="bold"
+      >
         <tspan x="1" y="225">BEATS</tspan>
       </text>
       <text
@@ -533,7 +675,8 @@
         font-family="BarlowSemiCondensed-Bold, Barlow Semi Condensed"
         font-size="11"
         font-style="condensed"
-        font-weight="bold">
+        font-weight="bold"
+      >
         <tspan x="154" y="328">BEATS</tspan>
       </text>
     </g>

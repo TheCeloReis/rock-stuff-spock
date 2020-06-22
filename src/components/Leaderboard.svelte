@@ -1,7 +1,3 @@
-<script>
-  export let score = 0;
-</script>
-
 <style>
   .container {
     border: 2px solid var(--header-outline);
@@ -35,6 +31,10 @@
     font-size: 2.25rem;
   }
 </style>
+
+<script>
+  export let score = 0;
+</script>
 
 <div class="container">
   <div class="logo">
