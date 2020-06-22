@@ -59,4 +59,15 @@ describe("The store game", () => {
       expect(get(game).showRules).toBeFalsy();
     });
   });
+
+  describe("When the game begins", () => {
+    describe("The player choose a option", () => {
+      it("Should update its state", () => {
+        const hand = "rock";
+        expect(get(game).player.selected).toBeUndefined();
+        game.playerChoose(hand);
+        expect(get(game).player.selected).toBe(hand);
+      });
+    });
+  });
 });

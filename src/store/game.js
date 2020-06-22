@@ -35,9 +35,15 @@ const reset = () => set(uninitializedGame);
 const toggleRules = () =>
   update((state) => ({ ...state, showRules: !state.showRules }));
 
+const playerChoose = (selected) => {
+  console.log("1", 1);
+  update((state) => ({ ...state, player: { ...state.player, selected } }));
+};
+
 export default {
   subscribe,
   init,
   reset,
   toggleRules,
+  playerChoose,
 };

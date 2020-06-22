@@ -26,6 +26,7 @@
 <script>
   import Button from "./Button.svelte";
   import GameButton from "./GameButton.svelte";
+  import GameBoard from "./GameBoard.svelte";
   import Leaderboard from "./Leaderboard.svelte";
 
   import game from "../store/game";
@@ -44,10 +45,13 @@
 {:else}
   <Leaderboard score="{$game.player.score}" />
 
-  {#each $game.cards as card}
-    <GameButton option="{card.value}" />
-  {/each}
-  <Button onClick="{() => game.reset()}">Reset</Button>
+  <GameBoard
+    cards="{$game.cards}"
+    selected="{$game.player.selected}"
+    select="{game.playerChoose}"
+  />
+
+  <!-- <Button onClick="{() => game.reset()}">Reset</Button> -->
 
   <div class="button-rules">
     <Button onClick="{game.toggleRules}">Rules</Button>
