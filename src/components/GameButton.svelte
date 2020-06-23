@@ -1,4 +1,4 @@
-<style>
+<style lang="scss">
   .button {
     position: absolute;
     transition: all 500ms ease;

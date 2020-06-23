@@ -1,4 +1,4 @@
-import { sass as sv_sass } from "svelte-preprocess-sass";
+import { scss } from "svelte-preprocess";
 import sass from "rollup-plugin-sass";
 import svelte from "rollup-plugin-svelte";
 import resolve from "@rollup/plugin-node-resolve";
@@ -27,11 +27,7 @@ export default {
       css: (css) => {
         css.write("public/build/bundle.css");
       },
-      preprocess: {
-        style: sv_sass({
-          includePaths: ["./src/styles", "node_modules"],
-        }),
-      },
+      preprocess: [scss({})],
     }),
     resolve({
       browser: true,
