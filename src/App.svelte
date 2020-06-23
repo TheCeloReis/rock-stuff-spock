@@ -1,3 +1,13 @@
+<style>
+  #app {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    max-width: var(--max-width);
+    margin: auto;
+  }
+</style>
+
 <script>
   import "./styles/main.scss";
   import Game from "./components/Game.svelte";
@@ -6,21 +16,11 @@
   import game from "./store/game";
 </script>
 
-<style>
-  #app {
-    position: relative;
-    overflow: hidden;
-    height: 100%;
-    max-width: var(--max-width);
-    width: 100%;
-    margin: auto;
-  }
-</style>
-
 <div id="app">
   <Game />
   <RulesModal
-    mode={$game.mode}
-    show={$game.showRules}
-    toggle={game.toggleRules} />
+    mode="{$game.mode}"
+    show="{$game.showRules}"
+    toggle="{game.toggleRules}"
+  />
 </div>

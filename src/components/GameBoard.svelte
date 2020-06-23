@@ -75,5 +75,4 @@
   <span class="game-caption -right {selected !== undefined && '-is-selected'}">
     Opponent
   </span>
-
 </div>

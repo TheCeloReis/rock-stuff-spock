@@ -21,7 +21,7 @@
   export let type = "outline";
   export let full = "";
   export let disabled = undefined;
-  export let onClick = () => {};
+  export let onClick;
 </script>
 
 <button {disabled} on:click="{onClick}" class="{`button ${type} ${full}`}">
