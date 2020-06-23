@@ -14,4 +14,14 @@
   --gradient-spock: linear-gradient(hsl(189, 59%, 53%), hsl(189, 58%, 57%));
 
   --button-size: 100px;
+  --button-border: 12px;
+
+  @media screen and (min-width: 600px) {
+    --button-size: 150px;
+    --button-border: 18px;
+  }
+  @media screen and (min-width: 900px) {
+    --button-size: 200px;
+    --button-border: 24px;
+  }
 }

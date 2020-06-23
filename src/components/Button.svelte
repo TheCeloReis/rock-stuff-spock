@@ -24,10 +24,6 @@
   export let onClick = () => {};
 </script>
 
-<button
-  disabled="{disabled}"
-  on:click="{onClick}"
-  class="{`button ${type} ${full}`}"
->
+<button {disabled} on:click="{onClick}" class="{`button ${type} ${full}`}">
   <slot />
 </button>

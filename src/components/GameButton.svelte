@@ -3,7 +3,7 @@
     position: absolute;
     transition: all 500ms ease;
     border-radius: 50%;
-    border: 12px solid #fff0;
+    border: var(--button-border) solid #fff0;
     background: var(--dark-text);
     padding: 0;
     width: var(--button-size);
@@ -75,7 +75,7 @@
 </style>
 
 <script>
-  export let option = "";
+  export let option;
   export let select;
   export let selected;
   export let opponent = false;
