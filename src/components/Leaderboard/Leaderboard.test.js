@@ -1,6 +1,6 @@
 import { render } from "@testing-library/svelte";
 
-import Leaderboard from "../Leaderboard.svelte";
+import Leaderboard from "./Leaderboard.svelte";
 
 describe("The component <Leaderboard />", () => {
   describe("When given a score", () => {
