@@ -25,7 +25,7 @@
 
 <script>
   import Button from "./Button.svelte";
-  import GameButton from "./GameButton.svelte";
+  import GameButton from "./GameButton/GameButton.svelte";
   import GameBoard from "./GameBoard.svelte";
   import Leaderboard from "./Leaderboard.svelte";
 

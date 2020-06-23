@@ -46,11 +46,10 @@
 <script>
   import { beforeUpdate, tick } from "svelte";
 
-  import GameButton from "./GameButton.svelte";
+  import GameButton from "./GameButton/GameButton.svelte";
 
   export let cards = [];
   export let selected = undefined;
-  export let opponent = undefined;
   export let select = () => {};
 </script>
 
@@ -71,7 +70,6 @@
     You picked
   </span>
 
-  <GameButton select="{() => {}}" {selected} option="{opponent}" opponent />
   <span class="game-caption -right {selected !== undefined && '-is-selected'}">
     Opponent
   </span>
