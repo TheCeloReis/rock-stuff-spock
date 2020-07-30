@@ -50,7 +50,7 @@
 
   export let cards = [];
   export let selected = undefined;
-  export let select = () => {};
+  export let select;
 </script>
 
 <div class="game-board">

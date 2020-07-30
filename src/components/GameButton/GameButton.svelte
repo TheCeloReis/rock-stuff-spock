@@ -12,7 +12,7 @@
 
 <div
   class="normal {option}
-  {option === selected ? '-is-selected' : selected !== undefined && '-is-hidden'}"
+  {option === selected ? '-is-selected' : selected !== undefined ? '-is-hidden' : false}"
 >
   <RoundedButton onClick="{select}" option="{option || 'option'}" />
 </div>
