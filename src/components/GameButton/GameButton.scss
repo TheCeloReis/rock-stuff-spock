@@ -1,13 +1,7 @@
-.rock,
-.paper,
-.scissors,
-.lyzard,
-.spock {
+.normal {
   position: absolute;
   transition: all 500ms ease;
-}
 
-.normal {
   &.rock {
     top: calc(100% - var(--button-size));
     left: 50%;

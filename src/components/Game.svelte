@@ -48,6 +48,7 @@
   <GameBoard
     cards="{$game.cards}"
     selected="{$game.player.selected}"
+    opponentSelected="{$game.opponent.selected}"
     select="{game.playerChoose}"
   />
 

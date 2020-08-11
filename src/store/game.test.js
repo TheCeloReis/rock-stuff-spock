@@ -1,4 +1,4 @@
-import game from "../game";
+import game from "./game";
 import { get } from "svelte/store";
 
 describe("The store game", () => {

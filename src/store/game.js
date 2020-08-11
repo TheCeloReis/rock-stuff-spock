@@ -37,6 +37,14 @@ const toggleRules = () =>
 
 const playerChoose = (selected) => {
   update((state) => ({ ...state, player: { ...state.player, selected } }));
+
+  setTimeout(() => {
+    const i = Math.floor(Math.random() * 3);
+    update((state) => ({
+      ...state,
+      opponent: { ...state.opponent, selected: NORMAL_MODE[i].value },
+    }));
+  }, 1000);
 };
 
 export default {

@@ -52,9 +52,9 @@
   export let toggle = () => {};
 </script>
 
-<div class="{`container${show ? ' on' : ''}`}">
+<div class="{`container ${show ? 'on' : ''}`}">
   <div class="modal-box">
-    <Rules mode="mode" />
+    <Rules {mode} />
   </div>
 
   <button class="button" on:click="{toggle}" title="Fechar">
