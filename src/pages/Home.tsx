@@ -1,6 +1,6 @@
 import React from "react";
 import { useDispatch } from "react-redux";
-import { Link } from "react-router-dom";
+import Button from "../components/Button";
 
 import { signOut } from "../redux/auth/action";
 
@@ -9,10 +9,14 @@ function HomePage() {
 
   return (
     <div>
-      <Link to="/create">Create</Link>
-      <button>Join</button>
+      <Button elementType="link" to="/create">
+        Create
+      </Button>
+      <Button elementType="link" to="/join">
+        Join
+      </Button>
 
-      <button onClick={() => dispatch(signOut())}>Logout</button>
+      <Button onPress={() => dispatch(signOut())}>Logout</Button>
     </div>
   );
 }

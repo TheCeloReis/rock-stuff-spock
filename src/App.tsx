@@ -5,13 +5,14 @@ import { Route } from "react-router-dom";
 
 import CreateGamePage from "./pages/CreateGame";
 import HomePage from "./pages/Home";
+import LoadingPage from "./pages/Loading";
 import LogInPage from "./pages/LogIn";
 
 function App() {
   const { loading, user } = useSelector((state) => state.auth);
 
   if (loading !== false) {
-    return <>Loading</>;
+    return <LoadingPage />;
   }
 
   if (!user) {
