@@ -2,14 +2,13 @@ import React from "react";
 import ReactDOM from "react-dom";
 import { Provider } from "react-redux";
 import { BrowserRouter } from "react-router-dom";
-import firebase from "firebase/app";
+
+import "reset.css";
 
 import App from "./App";
 import * as serviceWorkerRegistration from "./serviceWorkerRegistration";
 import reportWebVitals from "./reportWebVitals";
 import { store } from "./redux/store";
-
-firebase.initializeApp({});
 
 ReactDOM.render(
   <React.StrictMode>
