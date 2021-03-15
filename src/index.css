@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+#root {
+  overflow-y: auto;
+}
+
+html,
+body {
+  overflow: hidden;
+}
+
+.firebase-emulator-warning {
+  display: none;
+}
