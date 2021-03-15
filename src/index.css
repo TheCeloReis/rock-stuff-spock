@@ -9,7 +9,9 @@ body,
 }
 
 #root {
+  position: relative;
   overflow-y: auto;
+  min-height: 100%;
 }
 
 html,
