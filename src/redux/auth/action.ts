@@ -1,4 +1,4 @@
-import { googleAuthProvider } from "../../firebase/utils";
+import { googleAuthProvider, UserType } from "../../firebase/utils";
 import { RootThunkAction } from "../store";
 import {
   AuthAction,
@@ -9,7 +9,7 @@ import {
   UserLogoutAction,
 } from "./type";
 
-export const userLogin = (user: unknown): UserLoginAction => ({
+export const userLogin = (user: UserType): UserLoginAction => ({
   type: AuthAction.AUTH_USER_LOGIN,
   user,
 });

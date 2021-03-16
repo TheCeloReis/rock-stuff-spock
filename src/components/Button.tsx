@@ -6,6 +6,7 @@ type PropsType = PropsWithChildren<{
   elementType?: "link" | "button";
   to?: string;
   onPress?: () => void;
+  full?: boolean;
 }>;
 
 function Button(props: PropsType) {
@@ -24,7 +25,9 @@ function Button(props: PropsType) {
         ref={ref}
         {...buttonProps}
         to={props.to ?? "#"}
-        className="bg-blue-500 hover:bg-blue-900 text-white font-bold py-3 px-4 rounded"
+        className={`bg-blue-500 hover:bg-blue-900 text-white font-bold py-3 px-4 rounded ${
+          props.full ? "w-full" : ""
+        }`}
       >
         {props.children}
       </Link>
@@ -35,7 +38,9 @@ function Button(props: PropsType) {
     <button
       ref={ref}
       {...buttonProps}
-      className="bg-blue-500 hover:bg-blue-900 text-white font-bold py-3 px-4 rounded"
+      className={`bg-blue-500 hover:bg-blue-900 text-white font-bold py-3 px-4 rounded ${
+        props.full ? "w-full" : ""
+      }`}
     >
       {props.children}
     </button>

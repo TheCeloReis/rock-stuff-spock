@@ -1,6 +1,8 @@
+import { UserType } from "../../firebase/utils";
+
 export type AuthState = {
   loading: boolean | null;
-  user: unknown;
+  user: UserType | null;
 };
 
 export enum AuthAction {
@@ -13,7 +15,7 @@ export enum AuthAction {
 
 export type UserLoginAction = {
   type: AuthAction.AUTH_USER_LOGIN;
-  user: unknown;
+  user: UserType;
 };
 
 export type UserLogoutAction = {
